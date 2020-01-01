@@ -42,8 +42,20 @@ namespace IdentityServer4Demo
                     RequireClientSecret = false,
                     RequireConsent = true,
 
-                    RedirectUris = { "https://notused" },
-                    PostLogoutRedirectUris = { "https://notused" },
+                    RedirectUris = { 
+                        "http://localhost:4200/index.html",
+                        "http://localhost:4201/index.html",
+                        "http://localhost:4202/index.html",
+                        "http://localhost:4203/index.html",
+                        "http://localhost:4204/index.html"
+                    },
+                    PostLogoutRedirectUris = { 
+                        "http://localhost:4200/index.html",
+                        "http://localhost:4201/index.html",
+                        "http://localhost:4202/index.html",
+                        "http://localhost:4203/index.html",
+                        "http://localhost:4204/index.html"
+                    },
 
                     AlwaysIncludeUserClaimsInIdToken = true,
 
@@ -72,8 +84,21 @@ namespace IdentityServer4Demo
                     AccessTokenLifetime = 60 * 10,
                     IdentityTokenLifetime = 60 * 20,
 
-                    RedirectUris = { "https://notused" },
-                    PostLogoutRedirectUris = { "https://notused" },
+                    RedirectUris = { 
+                        "http://localhost:4200/index.html",
+                        "http://localhost:4201/index.html",
+                        "http://localhost:4202/index.html",
+                        "http://localhost:4203/index.html",
+                        "http://localhost:4204/index.html"
+                    },
+                    PostLogoutRedirectUris = { 
+                        "http://localhost:4200/index.html",
+                        "http://localhost:4201/index.html",
+                        "http://localhost:4202/index.html",
+                        "http://localhost:4203/index.html",
+                        "http://localhost:4204/index.html"
+                    },
+                    
                     FrontChannelLogoutUri = "http://localhost:5000/signout-idsrv", // for testing identityserver on localhost
 
                     AllowedGrantTypes = GrantTypes.Implicit,
